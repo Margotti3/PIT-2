@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Café</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="phone-screen">
+        <header>
+            <i class="fa fa-mug-saucer"></i>
+            <span>Cafeteria</span>
+        </header>
+
+        <main>
+            <div class="search">
+                <input type="text" id="search-ipt" placeholder="Pesquisar produto..." />
+                <i class="fa fa-magnifying-glass"></i>
+            </div>
+            <div class="order">
+                <span>Produtos</span>
+                <select id="slc-order">
+                    <option value="0" selected>Ordernar</option>
+                    <option value="1">Nome a-z</option>
+                    <option value="2">Nome z-a</option>
+                    <option value="3">Menor preço</option>
+                    <option value="4">Maior preço</option>
+                </select>
+            </div>
+            <div id="products">
+            </div>
+        </main>
+        <div id="menu">
+            <button onclick="window.location.href = '../home/index.html'">
+                <i class="fa fa-house"></i>
+            </button>
+            <button onclick="window.location.href = '../bag/index.html'">
+                <i class="fa fa-bag-shopping"></i>
+            </button>
+            <button onclick="window.location.href = '../orders/index.html'">
+                <i class="fa fa-list"></i>
+            </button>
+            <button onclick="window.location.href = '../user/index.html'">
+                <i class="fa fa-user-gear"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="../firebase.js" type="module"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

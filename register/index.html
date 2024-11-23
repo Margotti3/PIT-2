@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Café</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="phone-screen">
+        <div id="logo">
+            <i class="fa fa-mug-saucer"></i>
+            <span>Cafeteria</span>
+        </div>
+        <form id="register-form">
+            <div id="inputs">
+                <div class="input">
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" placeholder="Digite seu nome">
+                </div>
+                <div class="input">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" placeholder="Digite seu e-mail">
+                </div>
+                <div class="input">
+                    <label for="password">Senha</label>
+                    <input type="password" name="password" placeholder="*********">
+                </div>
+            </div>
+            <button type="submit" id="login">
+                Cadastrar
+            </button>
+        </form>
+    </div>
+
+    <script src="./scripts.js"></script>
+    <script src="../firebase.js" type="module"></script>
+</body>
+</html>

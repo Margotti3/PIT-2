@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Café</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="phone-screen">
+        <header>
+            <i class="fa fa-mug-saucer"></i>
+            <span>Cafeteria</span>
+        </header>
+
+        <main>
+            <a href="javascript:history.back()" class="goback">
+                <i class="fa fa-angle-left"></i> Voltar
+            </a>
+            <h1 class="title">Sacola</h1>
+            
+            <div id="items">
+            </div>
+
+            <button type="button" id="login" onclick="window.location.href = '../buy/index.html'">
+                Continuar
+            </button>
+        </main>
+        <div id="menu">
+            <button onclick="window.location.href = '../home/index.html'">
+                <i class="fa fa-house"></i>
+            </button>
+            <button onclick="window.location.href = '../bag/index.html'">
+                <i class="fa fa-bag-shopping"></i>
+            </button>
+            <button onclick="window.location.href = '../orders/index.html'">
+                <i class="fa fa-list"></i>
+            </button>
+            <button onclick="window.location.href = '../user/index.html'">
+                <i class="fa fa-user-gear"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

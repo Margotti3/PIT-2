@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Café</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="phone-screen">
+        <header>
+            <i class="fa fa-mug-saucer"></i>
+            <span>Cafeteria</span>
+        </header>
+
+        <main>
+            <a href="javascript:history.back()" class="goback">
+                <i class="fa fa-angle-left"></i> Voltar
+            </a>
+            <h1 class="title">Editar meus dados</h1>
+            <form id="edit-form">
+                <div id="inputs">
+                    <div class="input">
+                        <label for="name">Nome</label>
+                        <input type="text" name="name" placeholder="Digite seu nome">
+                    </div>
+                    <div class="input">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" placeholder="Digite seu e-mail">
+                    </div>
+                    <div class="input">
+                        <label for="password">Senha</label>
+                        <input type="password" name="password" placeholder="*********">
+                    </div>
+                </div>
+                <button type="submit" id="login">
+                    Salvar
+                </button>
+            </form>
+        </main>
+        <div id="menu">
+            <button onclick="window.location.href = '../home/index.html'">
+                <i class="fa fa-house"></i>
+            </button>
+            <button onclick="window.location.href = '../bag/index.html'">
+                <i class="fa fa-bag-shopping"></i>
+            </button>
+            <button onclick="window.location.href = '../orders/index.html'">
+                <i class="fa fa-list"></i>
+            </button>
+            <button onclick="window.location.href = '../user/index.html'">
+                <i class="fa fa-user-gear"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="./scripts.js"></script>
+    <script src="../firebase.js" type="module"></script>
+</body>
+</html>
