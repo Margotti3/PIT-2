@@ -81,6 +81,9 @@ function addBagProduct(index) {
     bag.push(listProducts[index]);
     
     localStorage.setItem('bag', JSON.stringify(bag));
+
+    $("#notifications").append(`<div>Produto adicionado a sacola!</div>`);
+    setTimeout(() => $("#notifications div").eq(0).remove(), 1500);
 }
 
 function showProduct(index) {

@@ -1,3 +1,9 @@
+$(document).ready(() => {
+    $("#edit-form input[name=name]").val(userData.name);
+    $("#edit-form input[name=email]").val(userData.email);
+    $("#edit-form input[name=password]").val(userData.pass);
+});
+
 $("#edit-form").submit((e) => {
     e.preventDefault();
 
